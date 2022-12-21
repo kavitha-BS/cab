@@ -1,0 +1,138 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs36\lang9 SRS(Software Requirement Specifications) \b0\fs22\par
+\b\fs36 CAB BOOKING\par
+
+\pard\sa200\sl276\slmult1\fs22\par
+INTRODUCTION\par
+
+\pard\sa200\sl276\slmult1\qj\b0 Transport is an integral part of our social living.  The modern society cannot run without\par
+transport   facilities.   There   are   many   companies   who   give   transport   services   to \par
+the individual and corporate clients. In the current system, the client first contacts with the\par
+transport company for getting transport service. The company then books the vehicle for\par
+him on the requested date and time and then sends the vehicle to his place at the time.\par
+The Online taxi booking system is the online service which will automate the process of\par
+booking a taxi and will facilitate both the client and the company with reduced time and \par
+
+\pard\sa200\sl276\slmult1 efforts. First the company will register his vehicles and the vehicles to the system.Then\par
+
+\pard\sa200\sl276\slmult1\qj the client will request for booking a vehicle on his required date and time, providing all\par
+necessary information. The fare will be calculated and client should confirm it. Then the\par
+employee will serve the client on the specific date and time. Finally the client will have an\par
+opportunity to give a feedback for the service he got. The company can check it and take\par
+appropriate action for the future improvements.\par
+\b PURPOSE\b0\par
+The purpose of this SRS document is to specify software requirements of the Online Taxi\par
+Booking. It is intended to be a complete specification of what functionality the system\par
+provides. The main purpose of the system is to automate the process of booking a taxi\par
+online. Specific design and implementation details will be specified in a future document\par
+\par
+\b PROJECT SCOPE\b0\par
+This project\rquote s aim is to automate the system, calculating the fare, collecting fare, collecting\par
+all necessary information of the client and then serve the client. The data used by the\par
+system is stored in a database that will be the centre of all information held clients and\par
+employees and the base for the remainder of the process after the initial application has\par
+been made. This enables things to be simplified and considerably quickened, making the\par
+jobs of the people involved easier. It supports the current process but centralizes it and\par
+makes it possible for decisions to be made earlier and easier way. \par
+\b ACTORS\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj Admin\par
+{\pntext\f2\'B7\tab}Passenger\par
+{\pntext\f2\'B7\tab}Financiar\par
+{\pntext\f2\'B7\tab}Driver\par
+
+\pard\sa200\sl276\slmult1\qj\b REQUIREMENTS\b0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj USER LOGIN\par
+
+\pard\sa200\sl276\slmult1\qj\tab Enter e-mail(Must be in valid format) and password(password should contain \tab lowercase letters,uppercase letters,numbers and underscores)\par
+\tab Submit button (validate name and password, if name not matching alert actor that \tab name is not correct, if password is wrong alert actor to change name, else Signin \tab actor).\tab\par
+\tab A link for forgott password\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj ADMIN LOGIN\par
+
+\pard\sa200\sl276\slmult1\qj\tab Enter e-mail(Must be in valid format) and password(password should contain \tab lowercase letters,uppercase letters,numbers and underscores)\par
+\tab Submit button (validate name and password, if name not matching alert actor that \tab name is not correct, if password is wrong alert actor to change name, else Signin \tab actor).\tab\par
+\tab A link for forgott password\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj DRIVER LOGIN\par
+
+\pard\sa200\sl276\slmult1\qj\tab Enter e-mail(Must be in valid format) and password(password should contain  \tab lowercase letters,uppercase letters,numbers and underscores)\par
+\tab Submit button (validate name and password, if name not matching alert actor that \tab name is not correct, if password is wrong alert actor to change name, else Signin \tab actor).\tab\par
+\tab A link for forgott password\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj FINANCIAR LOGIN\par
+
+\pard\sa200\sl276\slmult1\qj\tab Enter e-mail(Must be in valid format) and password(password should contain \tab lowercase letters,uppercase letters,numbers and underscores)\par
+\tab Submit button (validate name and password, if name not matching alert actor that \tab name is not correct, if password is wrong alert actor to change name, else Signin \tab actor).\tab\par
+\tab A link for forgott password\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj RESET PASSWORD PAGE\par
+
+\pard\sa200\sl276\slmult1\qj\tab A textfiled for enter phone number(should specify the country code and)\par
+\tab A button for send otp(otp must be 6 digits)\par
+\tab A link for resending the otp\par
+\tab A textbox for enter the otp\par
+\tab Textbox for enter new password(password must contain lowercase letters,uppercase \tab letters,numbers and underscore)\par
+\tab Textbox for confirm new password(if it is not matching with the new password then \tab showing a warning message)\par
+    \tab A finish button(when pressing the finish button redirect to login page)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj USER REGISTRATION\par
+
+\pard\sa200\sl276\slmult1\qj\tab Text boxes for User Name(name with no space),E-Mail id(must be in valid \tab format),Password(password must contain lowercase letters,uppercase \tab letters,numbers and underscore),Phone no(should specify the country code),Address(maximum of 200 characters)\par
+\tab Register button( when register go to user login page)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj ADMIN REGISTRATION\par
+
+\pard\sa200\sl276\slmult1\qj\tab Text boxes forAdmin Name(name with no space),E-Mail idmust be in valid \tab format),Password(password must contain lowercase letters,uppercase \tab letters,numbers and underscore),Phone no(should specify the country \tab code),Address(maximum of 200 characters)\par
+\tab Register button( when register go toadmin login page)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj DRIVER REGISTRATION\par
+
+\pard\sa200\sl276\slmult1\qj\tab Text boxes for Name(name with no space),E-Mail id(must be in valid \tab format),Password(password must contain lowercase letters,uppercase \tab letters,numbers and underscore),Phone no(should specify the country \tab code),Address(maximum of 200 characters)\par
+\tab Register button( when register go to driver login page)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj FINANCIAR REGISTRATION\par
+
+\pard\sa200\sl276\slmult1\qj\tab Text boxes for Name(name with no space),E-Mail id(must be in valid \tab format),Password(password must contain lowercase letters,uppercase \tab letters,numbers and underscore),Phone no(should \tab specify the country \tab code),Address(maximum of 200 characters)\par
+\tab Register button( when register go to financiar login page)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj CAB SEARCHING\par
+
+\pard\sa200\sl276\slmult1\qj\tab Search bar for searching cab(when typing each letter it displays the matching results)\par
+\tab When clicking a particular cab from the list it displays the detailed information of the \tab cab \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj CAB BOOKING\par
+
+\pard\sa200\sl276\slmult1\qj\tab Text fileds for entering passenger name , mail -id and phone number\par
+\tab showing a list of information about the cab such as cab number,images,route,time,no \tab of seats \par
+\tab A table for entering all the passengers name,age and gender\par
+\tab A  button for confirm booking(when the booking button pressed and the driver accept \tab it go to payment page)\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj DRIVER ACCEPTING THE REQUEST PAGE\par
+
+\pard\sa200\sl276\slmult1\qj\tab A text field for showing message such as a passenger confirm booking\par
+\tab A button for accpting the confirm request\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj PAYMENT PAGE\par
+
+\pard\sa200\sl276\slmult1\qj\tab  A text field for getting user debit/ credit card number, on entering the number it \tab should automatically detect the card company, and if the number is wrong, it should \tab show a error message with red colour like "Invalid card number".\par
+\lang1033\tab\f1\lang9 A text field for getting user debit/ credit card expiry as date format mm/yy, on entering \f0\lang1033\tab\f1\lang9 the date it should automatically detect if the date is wrong or not,\f0\lang1033  \f1\lang9 if it's wrong it should \f0\lang1033\tab\f1\lang9 show a error message with red colour like "Invalid card expiry".\par
+\f0\lang1033\tab\f1\lang9 A text field for getting user debit/ credit card cv\f0\lang16393 v\f1\lang9  as number, on entering the date it \f0\lang1033\tab\f1\lang9 should automatically detect if the cv\f0\lang16393 v\f1\lang9  is wrong or not,\f0\lang1033  \f1\lang9 if it's wrong it should show a \f0\lang1033\tab\f1\lang9 error message with red colour like "Invalid cv\f0\lang16393 v\f1\lang9 ".\par
+\f0\lang1033\tab\f1\lang9 A submit button which on pressed will check if all the informations are correct and if \f0\lang1033\tab\f1\lang9 yes, it will make the payment and the user will get a preview of the invoice containing \f0\lang1033\tab\f1\lang9 details like: username, user email, \f0\lang1033 cab\f1\lang9  route, seat number, \f0\lang1033 cab\f1\lang9  time, amount\f0\lang1033  \f1\lang9 and the \f0\lang1033\tab\f1\lang9 user can download it as pdf or can close the invoice which will \f0\lang1033\tab\f1\lang9 navigate the user back \f0\lang1033\tab\f1\lang9 to the \f0\lang1033 cab \f1\lang9 details page,\f0\lang1033  \f1\lang9 else if the details are not correct it will show a error message \f0\lang1033\tab\f1\lang9 like "Wrong credentials", or if there is any issue in payment it will show error message l\f0\lang1033\tab\f1\lang9 ike "Payment failed try again".\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\f0\lang16393 CAB BOOKING CANCELLATION PAGE\f1\lang9\par
+
+\pard\sa200\sl276\slmult1\qj\f0\lang16393\tab Text box that contain details of booked cab(time,cab number,destination)\par
+\tab A button for cancel the booked cab\par
+\tab When pressing the cancel button redirect to searching page\par
+\tab\par
+\tab\par
+\tab\f1\lang9\par
+\f0\par
+
+\pard\sa200\sl276\slmult1\tab\tab\par
+\tab        \par
+}
+ 
